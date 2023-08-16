@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.containerCards {
+  display: grid;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px  #ccc;
+  transition: transform 0.2s;
+  box-shadow: 0 0 10px cornflowerblue;
+  background-image: url('../images/jj.gif');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  
+}
+
+.containerCards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.containerInfo {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+  color: #fff;
+  padding: 1px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  
+  
+}
+
+.containerCards:hover .containerInfo {
+  display: block;
+  
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0.7;
+}
+
+.text {
+  margin-bottom: 1px;
+  font-size: 20px;
+}
+
+.parrafo {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  margin-bottom: 10px;
+  
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+}
+
+.containerInfo:hover .button {
+  background-color: #fff;
+}
